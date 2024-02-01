@@ -1,0 +1,326 @@
+:root{
+    --primary-color:black;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    image-rendering:optimizeQuality ;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+header{
+    display: flex;    
+}
+
+.Navbar{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-color: var(--primary-color);
+    width: 60%;
+    height: 10vh;
+    border-radius: 0 35px 35px 0;
+    z-index: 1;
+}
+.Navbar ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.Navbar ul li a{
+    text-decoration: none;
+     color: aliceblue;
+}
+.Navbar ul li a:hover{
+    border-bottom: 1px white solid;
+    animation: text-hover 1s infinite forwards ;
+}
+@keyframes text-hover{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.logo{
+    padding-left: 100px ;
+    height: 100px;
+}
+
+aside{
+    position: fixed;
+    display: flex;
+    width: 5%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    align-items: center;  
+}
+aside section{
+    position: fixed;
+    display: flex;
+    width: 5%;
+    height: 60%;
+    align-items: center;
+    flex-direction: column;
+    top: 25%;
+    background-color: black;
+    padding: 0% 1%;
+
+}
+aside section::before{
+    content: '';
+    background-color: aliceblue;
+    height: 200px;
+    width: 1px;
+}
+aside section::after{
+    content: '';
+    background-color: aliceblue;
+    height: 200px;
+    width: 1px;
+}
+.Aside-img-cont img{
+    object-fit: cover;
+    width:100%;
+}
+
+.Aside-redes{
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    
+    gap: 5px;
+
+}
+
+.Aside-redes a i{
+    color: aliceblue;    
+    height: 20px;
+    width: 20px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;    
+    
+}
+
+.main-text-side{
+    width: 50%;    
+    height: 100vh;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-text-side p{
+    width: 100%;
+    min-width: 450px;
+    text-align: start;
+    font-size: 1.4rem;
+}
+.main-text-side h1{
+    font-size: 2.4rem;
+}
+
+.main-img-side{
+    width: 50%;
+    height: 100vh;
+    background-image: url(imgs/habitacion-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;    
+}
+
+.main-img-side img{
+    height: 100vh;
+    object-fit:contain;
+}
+
+.second-sect{
+    width: 100%;
+    height: 100vh;
+    display: flex;    
+}
+.er-img{
+    width: 50%;
+    object-fit: cover;
+    padding: 4% 8%;
+}
+
+.second-sect-right{
+    width: 50%;
+    padding: 4% 1% 5% 0%;    
+}
+
+.second-sect-right p:nth-child(2){
+    padding-bottom: 10px;
+} 
+
+.mini-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.mini-galeria img{
+    object-fit: cover;
+}
+
+.mini-galeria img:nth-child(1){
+    width: 55%;
+    height: 400px;
+    min-height: 300px;
+}
+.mini-galeria img:nth-child(2){
+    width: 40%;
+}
+.mini-galeria img:nth-child(3){
+    width: 97.5%;
+    height: 300px;
+    min-height: 250px;
+}
+
+.divisor{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px 0;
+    background-color: rgb(235, 235, 235);
+}
+
+.third-sect-bg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3% 3% 3% 7%;
+    width: 100%;
+    background-image: url(imgs/apartment-outside.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-card{
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 3%;
+    width: 30%;
+    height: 85vh;
+    color: aliceblue;
+}
+
+.bg-card h1{
+    font-size: 2rem;
+    padding-bottom: 7px;
+}
+
+.bg-card li{
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+}
+
+.bg-card p{
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+
+}
+.retrato-gonzo{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.bg-card-2{
+    height: 50%;
+    min-height: 500px;
+}
+
+.Gonzo{
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-contact{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(34, 29, 22);
+    color: aliceblue;
+}
+
+.last-contact-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5% ;
+    place-items: center;
+}
+
+.last-contact-info div figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+
+
+}
+
+.cont-form{
+    width: 30%;
+}
+
+.cont-form form{
+    display: grid;
+    gap: 5%;
+}
+
+input{
+    background-color: rgba(85, 83, 82, 0.89);
+    color: aliceblue;
+    width: 100%;
+    padding:3%;
+}
+
+input::placeholder{
+    color: rgb(177, 178, 179);
+}
+
+textarea{
+    background-color: rgba(85, 83, 82, 0.89);
+    color: aliceblue;
+    width: 100%;
+}
+textarea::placeholder{
+    color: rgb(177, 178, 179);
+}
+
+.Enviar{
+    width: 30%;
+    place-self: center;
+    background-color: beige;
+    padding: 3% 5%;
+    font-size: 1.4rem;
+}
